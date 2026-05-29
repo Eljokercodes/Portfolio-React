@@ -1,0 +1,81 @@
+
+:root{
+  --color-bg:#1f1f38;
+  --color-bg-variant:#2c2c6c;
+  --color-primary:#4db5ff;
+  --color-primary-variant:rgba(77,181,255,0.4);
+  --color-white:#fff;
+  --color-light:rgba(255,255,255,0.6);
+  --transition:all 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.container-skills .card-skill{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--color-bg-variant);
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.container-skills .card-skill .icon{
+    width: 65px;
+    height: 65px;
+    padding: 7px;
+    border-radius: 10px;
+    background: var(--color-bg-variant);
+}
+
+.container-skills .card-skill h4{
+    font-size: 16px;
+}
+
+.container-skills .card-skill p{
+    font-size: 14px;
+}
+
+/* responsive */
+
+@media (max-width:1024px) {
+    .container-skills .card-skill{
+        width: 48%;
+    }
+}
+@media (max-width:600px) {
+    .container-skills .card-skill{
+        width: 49%;
+    }
+    .container-skills .card-skill .icon{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+
+    }
+    .container-skills .card-skill h4{
+    font-size: 13px;
+}
+
+.container-skills .card-skill p{
+    font-size: 10px;
+}
+}
